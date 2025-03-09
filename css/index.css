@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color-primary: #000000;
+    --color-secondary: #f6f6f6;
+    --color-tertiary: #22d4fd;
+    --color-hover: #272727;
+
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-krona: 'Krona One', sans-serif;
+
+}
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.container-header{
+    padding: 2% 0% 0% 15%;
+}
+
+.container-nav{
+    display: flex;
+    gap: 80px;
+}
+
+.nav-menu{
+    font-family: var(--font-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-tertiary);
+    text-decoration: none;
+}
+
+.container-main{ 
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-title{
+    font-size: 2.25rem;
+    font-family: var(--font-krona);
+}
+
+.titleStrong{
+    color: var(--color-tertiary);
+}
+
+
+.content-description{
+    font-size: 1.5rem;
+    font-family: var(--font-montserrat);
+}
+
+.content-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.subtitle{
+    font-family: var(--font-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.btn-stryle{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--font-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-tertiary);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-stryle:hover{
+    background-color: var(--color-hover);
+    color: var(--color-primary);
+    transition: 0.5s;
+}
+
+.content-images{
+    width: 50%;
+}
+
+.container-footer{
+    text-align: center;
+    background-color: var(--color-tertiary);
+    padding: 24px;
+    color: var(--color-primary);
+    font-family: var(--font-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* display: flex; */
+    width: 100%;
+    /* position: fixed; */
+    bottom: 5px;
+    /* justify-content: center; */
+}
+
+@media (max-width: 1200px){
+    .container-header{
+        padding: 10%;
+    }
+
+    .container-nav{
+        justify-content: center;
+    }
+
+    .container-main{
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    .content{
+        width: auto;
+    }
+}
+
+/* Ejercicios */
+/* 1 - Estilizando elementos con clases CSS */
+.texto-destacado{
+    color: #0e558f;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* 2 - Destacando títulos con CSS */
+.titulo-blog{
+    color: #7b3ec0;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* 3 - Estilos situacionales con clases CSS */
+.urgente{
+    color: red;
+}
